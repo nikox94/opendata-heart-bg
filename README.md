@@ -1,2 +1,2 @@
 # opendata-heart-bg
-A webapp to collect and store opendata.government.bg infromation (and potentially analyse it)
+A webapp to collect, store and analyse information from public datasets from around the internet and the world.
