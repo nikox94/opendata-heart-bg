@@ -21,7 +21,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringApplicationConfiguration(classes = WebHeartApplication.class)
 @WebAppConfiguration
 @IntegrationTest({"server.port=1970"})
-public class WebHeartApplicationTests {
+public class WebHeartApplicationTestsIT {
 
     @Value("${local.server.port}")
     private int port;
@@ -38,6 +38,6 @@ public class WebHeartApplicationTests {
 	@Test
 	public void getHello() throws Exception {
 		ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
-		assertThat(response.getBody(), equalTo("This will be a very cool application! Just wait and see!<br>Needs a bit of time to hatch."));
+		assertThat(response.getBody(), equalTo("Greetings from Spring Boot!"));
 	}
 }
